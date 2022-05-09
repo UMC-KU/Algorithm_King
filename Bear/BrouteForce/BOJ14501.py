@@ -10,11 +10,13 @@ for _ in range(N):
 
 dp=[0]*(N+1)
 
-for i in range(0,N):
+for i in range(N-1, -1, -1):
+    day = TP[i][0]
+    pay = TP[i][1]
+    if day + i <= N:
+        dp[i] = max(pay + dp[day+i], dp[i+1])
+    else:
+        dp[i] = dp[i+1]
+            
 
-    for j in range(i+1):
-        if i - TP[j][0] >= -1 and j + TP[j][0] - 1 <= i:
-            dp[i] = max(dp[i - TP[j][0]]+TP[j][1],dp[i])
-            print(str(dp[i])+" i:"+str(i))
-
-print(dp[N-1])
+print(dp[0])
