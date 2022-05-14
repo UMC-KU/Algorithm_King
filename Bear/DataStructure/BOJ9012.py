@@ -7,9 +7,6 @@ string = []
 for i in range(N):
     string.append(sys.stdin.readline().rstrip())
 
-temp = "1"
-print(temp[0])
-
 
 for i in range(N):
     temp = []
