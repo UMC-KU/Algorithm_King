@@ -1,5 +1,4 @@
 import sys
-input = sys.stdin.readline
 
 N, M = map(int, sys.stdin.readline().rstrip().split())
 str = set([sys.stdin.readline().rstrip() for _ in range(N)])

@@ -4,7 +4,7 @@ import sys
 
 N = int(sys.stdin.readline().rstrip())
 Balloon =deque(enumerate(map(int, sys.stdin.readline().rstrip().split())))
-# 인덱스와 값 동시 저장
+# 인덱스와 값 동시 저장 5 4 3 2 1
 answer = []
 
 while len(Balloon) != 0:
