@@ -1,8 +1,5 @@
 import sys
 
-from numpy import sort
-
-
 zoac = sys.stdin.readline().rstrip()
 
 if len(zoac) == 1:
