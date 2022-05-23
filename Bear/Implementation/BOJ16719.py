@@ -1,7 +1,5 @@
 import sys
 
-from numpy import sort
-
 
 zoac = sys.stdin.readline().rstrip()
 
@@ -15,6 +13,8 @@ for i in range(0,len(zoac)):
     dic.append((zoac[i],i))
 
 dic = sorted(dic)
+
+print(dic)
 
 ans = [0 for _ in range(len(zoac))]
 ans[dic[0][1]] = dic[0][0]

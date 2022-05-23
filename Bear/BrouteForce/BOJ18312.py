@@ -34,12 +34,11 @@ while True:
 
     temp = hh+mm+ss
     if str(K) in temp:
-        print(temp)
         ans += 1
     
     if h == N and m == 59 and s == 59:
         break
-    
+
     s += 1
 
     if s == 60:
