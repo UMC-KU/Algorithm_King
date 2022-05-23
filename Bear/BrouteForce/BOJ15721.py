@@ -7,7 +7,6 @@ bin = int(sys.stdin.readline().rstrip())
 temp = 0
 n = 2 #번데기 반복횟수
 m = 0 #bin이 나온 횟수
-people = 0
 list = []
 
 
