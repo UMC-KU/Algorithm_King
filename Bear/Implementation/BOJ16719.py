@@ -1,9 +1,6 @@
 import sys
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b99107bbf67165d2fa60dc63e06c70eaf638ba3d
 zoac = sys.stdin.readline().rstrip()
 
 if len(zoac) == 1:
