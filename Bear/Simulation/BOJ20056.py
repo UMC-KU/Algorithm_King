@@ -12,12 +12,11 @@ for _ in range(M):
     fire[y-1][x-1].append([m,s,d])
 
 for _ in range(K):
-    
     temp = [[[] for _ in range(N)] for _ in range(N)]
 
     for y in range(N):
         for x in range(N):
-            if len(fire[y][x]) > 0:
+            if len(fire[y][x]):
                 for i in range(len(fire[y][x])):
                     m = fire[y][x][i][0]
                     s = fire[y][x][i][1]
@@ -41,17 +40,20 @@ for _ in range(K):
                     s = temp[y][x][i][1]
                     d = temp[y][x][i][2]
 
-                    if d % 2 == 0:
-                        check_odd == False
-                    elif d % 2 == 1:
-                        check_even == False
+
+                    print(d%2)
+                    if (d % 2) == 0:
+                        check_odd = False
+                    elif (d % 2) == 1:
+                        check_even = False
                     
                     sum_m += m
                     sum_s += s
                 temp[y][x] = []
                 m = sum_m // 5
                 s = sum_s // num_fire
-
+                print(check_even)
+                print(check_odd)
                 for i in range(4):
                     if m != 0:
                         if check_even or check_odd:
@@ -59,11 +61,10 @@ for _ in range(K):
                         else:
                             temp[y][x].append([m,s,i*2+1])
                     else:
-                        continue
-                    
-                
-                    
+                        break      
+    print(temp)
     fire = temp
+    
 
 answer = 0
 
@@ -73,13 +74,3 @@ for y in range(N):
             answer += fire[y][x][i][0]
 
 print(answer)        
-
-                
-
-        
-
-
-
-            
-
-
