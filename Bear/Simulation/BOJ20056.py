@@ -12,11 +12,12 @@ for _ in range(M):
     fire[y-1][x-1].append([m,s,d])
 
 for _ in range(K):
+    
     temp = [[[] for _ in range(N)] for _ in range(N)]
 
     for y in range(N):
         for x in range(N):
-            if len(fire[y][x]):
+            if len(fire[y][x]) > 0:
                 for i in range(len(fire[y][x])):
                     m = fire[y][x][i][0]
                     s = fire[y][x][i][1]
