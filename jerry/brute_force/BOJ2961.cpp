@@ -50,6 +50,7 @@ int main(void) {
             sin = v[k].first;
           } else
             sin *= v[k].first;
+
           zan += v[k].second;
         }
       }

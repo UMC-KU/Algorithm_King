@@ -25,7 +25,7 @@ vector<pair<int, pair<int, int>>> v;
 
 int turn() {
   memset(is_ok, true, sizeof(is_ok));
-  for (int i = 0; i <= 999; i++) {
+  for (int i = 123; i <= 999; i++) {
     string tmp = to_string(i);
     if (tmp[0] == tmp[1] || tmp[0] == tmp[2] || tmp[1] == tmp[2])
       is_ok[i] = false;
@@ -33,7 +33,7 @@ int turn() {
       is_ok[i] = false;
   }
 
-  for (int i = 0; i < v.size(); i++) {
+  for (int i = 123; i < v.size(); i++) {
     int num = v[i].first;
     int strike = v[i].second.first;
     int ball = v[i].second.second;

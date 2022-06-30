@@ -1,7 +1,22 @@
 {
+  // c++
   "files.associations": {
     "utility": "cpp",
     "vector": "cpp",
-    "algorithm": "cpp"
-  }
+    "algorithm": "cpp",
+    "xiosbase": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "queue": "cpp",
+    "xstring": "cpp",
+    "xutility": "cpp",
+    "tuple": "cpp",
+    "cstdlib": "cpp"
+  },
+  "[python]": {
+    "editor.defaultFormatter": null,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+}
 }
