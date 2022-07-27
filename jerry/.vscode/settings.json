@@ -18,5 +18,18 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.formatOnSave": true
-}
+  },
+  {
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "html.format.unformatted": "",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "python.formatting.blackArgs": [
+      "--line-length",
+      "100"
+    ], // 최대 코드길이를 100으로 설정합니다.
+    "settingsSync.ignoredExtensions": []
+  }
 }
