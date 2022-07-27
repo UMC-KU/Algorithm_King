@@ -26,13 +26,12 @@ def dfs(now_pos, now_cnt):
 
 
 R, C = map(int, input().split())
-arr = [0 for i in range(len(string.ascii_uppercase))]
+arr = [False for i in range(len(string.ascii_uppercase))]
 map = []
 # check = [[0] * C for i in range(R)]  # 방문했는지를 체크하는 배열
 # visited = [[False]*C for _ in range(R)] <- 이렇게 하자
 for i in range(R):
-    l = list(input())
-    map.append(l)
+    map.append(list(input()))
 
 now_pos = (0, 0)
 now_cnt = 1
